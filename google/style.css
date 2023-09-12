@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.87);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+nav {
+    padding: 6px;
+}
+nav ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+nav ul li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+nav ul li button img {
+    border-radius: 50%;
+    width: 32px; 
+    height: 32px;
+    object-fit: cover;
+}
+
+nav ul li button svg {
+    height: 24px;
+    width: 24px;
+}
+
+nav ul li button:hover {
+    background-color: #f0f0f0;
+
+}
+
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.body .languages {
+    display: flex;
+}
+
+.body .languages ul {
+    display: flex;
+}
+
+.body form {
+    padding: 20px;
+    width: 100%;
+    max-width: 584px;
+    margin: 0 auto;    
+}
+
+.body form .button-group {
+    padding-top: 18px;
+    text-align: center;
+}
+
+.body form .button-group button {
+    padding: 0 16px;
+    min-width: 54px;
+    height: 36px;
+    margin: 11px 4px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    color: #3c4043;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.body form .search-wrapper {
+    position: relative;
+}
+
+.body form .search-wrapper input {
+    height: 46px;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    background-color: #fff;    
+    min-height: 44px;
+}
+.body form .search-wrapper .icon-search {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.body form .search-wrapper .icon-search svg{
+    width: 20px;
+    height: 20px;
+}
+
+.body form .search-wrapper .icon-search svg * {
+    fill: #9aa0a6;
+}
+
+
+.body form .search-wrapper .icons-right {
+    position: absolute;
+    display: flex;
+    gap: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 14px;
+}
+.body form .search-wrapper .icons-right svg {
+    width: 24px;
+    height: 24px;
+}
+
+.body form .button-group button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9f4;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+.body form input {
+    width: 100%;
+}
+
+.body .youtube {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.body .youtube img {
+    height: 32px;
+    width: 32px;
+    margin-right: 5px;    
+}
+
+.body .languages {
+    display: flex;
+    align-items: cneter;
+    justify-content: center;
+    gap: 3px;
+}
+
+.body .languages ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.google-logo {
+    max-height: 92px;
+}
+.px-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+footer {
+    background-color: #f2f2f2;
+}
+
+footer ul {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer ul li a{
+    padding: 15px;
+    display: block;
+}
+footer .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .footer-top ul {
+    justify-content: baseline;
+}
+
+
+.menu_popup {
+    position: absolute;
+    width: 370px;
+    height: 470px;
+    top: 0px;
+    right: 30px;
+    margin-top: 49px;
+    border-radius: 28px;
+    background-color: #e9eef6;
+    padding: 8px;
+    border: none;    
+    box-shadow: 0 4px 8px 3px rgba(0,0,0,.15), 0 1px 3px rgba(0,0,0,.3);
+}
+
+.popup_wrapper {
+    background-color: #f8fafd;
+    position: relative;
+    height: 100%;    
+    border-radius: 24px 24px 4px 4px; 
+    padding: 24px 20px;
+    width: auto;
+}
+
+.popup_wrapper ul {
+    text-align: center;
+}
+
+.popup_wrapper .icon-item-list {
+    height: 84px;
+    width: 84px;
+    padding: 6px;
+    display: inline-block;
+}
+.popup_wrapper .icon-link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.popup_wrapper .icon-link:hover {
+    background-color: #e9eef6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup_wrapper .icons {
+    background-image: url('./assets/images/icons.png');
+    height: 53px;
+    width: 53px;
+    vertical-align: top;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.popup_wrapper .icons {
+    background-size: 53px 2547px;    
+}
+.popup_wrapper .icon-link span:nth-child(2) {
+    font-size: 14px;
+    letter-spacing: 0.09px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 76px;
+    text-align: center;
+}
+.popup_wrapper .icons.search {
+    background-position: 0 -1392px;
+}
+.popup_wrapper .icons.youtube {
+    background-position: 0 -2378px;
+}
+.popup_wrapper .icons.play {
+    background-position: 0 -290px;
+}
+
+.popup_wrapper .icons.gmail {
+    background-position: 0 -2436px;
+}
+.popup_wrapper .icons.drive {
+    background-position: 0 -116px;
+}
+.popup_wrapper .icons.maps {
+    background-position: 0 -1044px;
+}
+.popup_wrapper .icons.calendar {
+    background-position:0 -1276px;
+}
+.popup_wrapper .icons.business {
+    background-position:0 -406px;
+}
+.popup_wrapper .icons.news {
+    background-position:0 -1334px;
+}
+.popup_wrapper .icons.meet {
+    background-position:0 -348px;
+}
+.popup_wrapper .icons.ad {
+    background-position:0 -986px;
+}
+.popup_wrapper .icons.shopping {
+    background-position:0 -174px;
+}

@@ -1,0 +1,99 @@
+<body>
+    <div class="container page-width mx-auto">
+        <div class="column img-column">
+            <img src="./images/placeholder.png" alt="placeholder" />
+            <div class="card resort">
+                <img src="./images/frame2.png" alt="frame" />
+                <div>
+                    <h5 class="text-dark">Heaven Resort 
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                <path d="M7.74244 1.01869C8.03361 0.327102 9.02531 0.327103 9.31648 1.01869L11.035 5.10057C11.1578 5.39213 11.4353 5.59134 11.7539 5.61657L16.2145 5.96986C16.9703 6.02972 17.2767 6.96147 16.7009 7.44875L13.3024 10.3247C13.0597 10.5302 12.9536 10.8526 13.0278 11.1597L14.0661 15.4599C14.242 16.1885 13.4398 16.7644 12.7927 16.374L8.97377 14.0695C8.70099 13.9049 8.35793 13.9049 8.08516 14.0695L4.26621 16.374C3.61916 16.7644 2.81687 16.1885 2.99278 15.4599L4.0311 11.1597C4.10526 10.8526 3.99925 10.5302 3.75651 10.3247L0.357948 7.44875C-0.217865 6.96147 0.0885882 6.02972 0.844353 5.96986L5.30501 5.61657C5.62363 5.59134 5.90117 5.39213 6.02392 5.10057L7.74244 1.01869Z" fill="#F9B811"/>
+                            </svg>
+                            (4.8)
+                        </span>
+                    </h5>
+                    <p class="text-dull">Starts from <span class="text-blue">$</span><span class="text-dark">450</span></p>
+                </div>
+            </div>
+            <div class="card guide">
+                <img src="./images/frame1.png" alt="frame" />
+                <div>
+                    <h5 class="text-dark">Jake Anderson</h5>
+                    <p class="text-dull">Best Tour Guide</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <h2 class="text-dark">With Our Service We Will Explore Something Different</h2>
+            <p class="text-dull">Uncover hidden gems and immerse yourself in vibrant cultures. From breathtaking landscapes to awe-inspiring destinations, let us guide you to the most extraordinary places on the planet.</p>
+            <button class="btn-primary">Explore more</button>
+        </div>
+    </div>
+</body>
+
+
+<style>
+    #ourservice .container {
+        padding: 112px 0;
+        align-items: center;
+    }
+    #ourservice h2 {
+        font-size: 40px;
+        line-height: 120%;
+    }
+    #ourservice p {
+        font-size: 18px;
+        line-height: 150%;
+    }
+    #ourservice .column:last-child {
+        max-width: 610px;
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+    }
+    #ourservice button {
+        width: fit-content;
+        background-color: #35AFF4;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+    }
+    #ourservice .img-column {
+        position: relative;
+    }
+    #ourservice .card p {
+        font-size: 16px;
+        margin-top: 4px;
+    }
+    #ourservice .img-column .card {
+        position: absolute;
+        display: flex;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 12px; 
+        gap: 16px;
+        box-shadow:  0px 4px 34px 0px rgba(50, 75, 104, 0.17);
+    }
+    #ourservice .card.resort {
+        top: 43px;
+        right: -43px;
+    }
+    #ourservice h5 {
+        display: flex;
+        gap: 27px;
+    }
+    #ourservice h5 span {
+        font-weight: 500;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+    #ourservice .card.guide {
+        border-radius: 82px;
+        bottom: 120px;
+        left: -30px;
+        padding-right: 40px;
+    }
+</style>

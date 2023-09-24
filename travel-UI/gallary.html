@@ -1,0 +1,147 @@
+<body>
+    <div class="container page-width mx-auto">
+        <div class="column">
+            <div class="row">
+                <div class="box">
+                    <h3 class="text-dark">Embark on unforgettable journeys with our premium travel services</h3>
+                    <p class="text-dull ">Picture-perfect getaways are just a click away. Find your slice of paradise, whether it's a tropical island, a charming city, or an enchanting countryside retreat.</p>
+                </div>
+            </div>
+            <div class="row cards">
+                <div class="card">
+                    <span>1</span>
+                    <h4>Best Choice</h4>
+                    <p class="description text-dull">We always prioritize our customer comfort and satisfaction. That’s why we only accept the best hotel and destination</p>
+                </div>
+                <div class="card">
+                    <span>2</span>
+                    <h4>Competitive Prices</h4>
+                    <p class="description text-dull">Altough the price tends to be cheaper but it will not affect the quality of service</p>
+                </div>
+                <div class="card">
+                    <span>3</span>
+                    <h4>Refund and Reschedule</h4>
+                    <p class="description text-dull">Don’t worry if suddenly you have problem and want to reschule or refund, you can get fully.</p>
+                </div>
+            </div>
+        </div>
+        <div class="column image-wrapper">
+            <div class="row big-img">
+                <img src="./images/image.png" alt="image" />
+
+                <div class="image-card">
+                    <div class="photos">
+                        <img src="./images/Ellipse1.png" alt="Ellipse" />
+                        <img src="./images/Ellipse2.png" alt="Ellipse" />
+                        <img src="./images/Ellipse3.png" alt="Ellipse" />
+                    </div>
+                    <h2><span class="text-blue">10K+</span> Satisfied Customer</h2>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./images/Image-1.png" alt="image" />
+                <img src="./images/Image-2.png" alt="image" />
+            </div>
+            <span class="circle"></span>
+        </div>
+    </div>
+</body>
+
+<style>
+    #gallary .container {
+        padding: 60px 0;
+    }
+    #gallary h3 {
+        font-size: 40px;
+        margin-bottom: 24px;
+        line-height: 120%;
+    }
+    #gallary p {
+        font-size: 18px;
+        line-height: 150%;
+    }
+    #gallary .column:first-child {
+        max-width: 520px;
+    }
+
+    #gallary .image-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        position: relative;
+    }
+
+    #gallary .image-wrapper .circle {
+        width: 400px;
+        height: 400px;
+        display: block;
+        position: absolute;
+        background-color: #E6F5FE;
+        border-radius: 50%;
+        border: none;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+    #gallary .image-wrapper .row:nth-child(2) {
+        display: flex;
+        gap: 24px;
+    }
+
+    #gallary h4 {
+        font-size: 18px;
+    }
+    #gallary .cards {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 32px;
+        margin-top: 32px;
+        margin-left: 32px;
+    }
+    #gallary .cards .card {
+        max-width: 47%;
+        position: relative;
+    }
+    #gallary .cards .card span {
+        position: absolute;
+        width: 24px; 
+        height: 24px; 
+        display: block;
+        background-color: #35AFF4;
+        color: #fff; 
+        border: 1px solid #35AFF4;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: -36px;
+        top: 0;
+    }
+    #gallary .description {
+        font-size: 16px;
+        line-height: 150%;
+    }
+    #gallary .big-img {
+        position: relative;
+    }
+    #gallary .image-card {
+        padding: 12px; 
+        position: absolute;
+        top: 30%;
+        left: -20%;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow:  0px 4px 32px 0px rgba(50, 75, 104, 0.17);
+    }
+    #gallary .image-card h2 {
+        margin-top: 16px;
+    }
+    #gallary .image-card .photos img:nth-child(2) {
+        transform: translateX(-20px);
+    }
+    #gallary .image-card .photos img:nth-child(3) {
+        transform: translateX(-40px);
+    }
+</style>

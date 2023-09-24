@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "CircularStd";
+    src: url('./font/CircularStd-Book.ttf');
+}
+
+@font-face {
+    font-family: "CircularStd-Bold";
+    src: url('./font/CircularStd-Bold.ttf');
+}
+
+@font-face {
+    font-family: "CircularStd-Medium";
+    src: url('./font/CircularStd-Medium.ttf');
+}
+
+* {
+    margin: 0; 
+    padding: 0;
+}
+body {
+    font-family: 'CircularStd';
+}
+
+ul {
+    margin: 0; 
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+
+
+.page-width {
+    max-width: 1440px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.button-group {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+button {
+    border-radius: 8px;
+    padding: 8px 20px 8px 20px;
+}
+.btn-primary {
+    background-color: #181818;
+    color: #fff;    
+    border: 1px solid #181818;
+}
+
+.btn-outline {
+    background-color: #FFFFFF;
+    color: #454545;
+    border: 1px solid #B7B7B7;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "CircularStd-Bold";
+}
+
+h1 {
+    font-size: 72px;
+    position: relative;
+}
+h1 svg {
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    z-index: -1;
+}
+h5 {
+    font-family: "CircularStd-Medium";
+    font-size: 18px;
+}
+
+.text-dull {
+    color: #909090;
+}
+.text-dark {
+    color: #181818;
+}
+.text-blue {
+    color: #35AFF4;
+}
+.inner-column.two {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-top: 40px;
+}
+.social-links {
+    display: flex;
+    gap: 16px;
+}
+
+
+
+
+.image-column {
+    position: relative;
+}
+.text-medium {
+    font-size: 14px;
+    font-family: "CircularStd-Medium";
+}
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}

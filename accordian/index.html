@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <ul id="faqWrapper">
+            <li>
+                <div class="faq">
+                    <button class="question">When not to use accordions?
+                        <img src="./arrow.png" alt="arrow" class="arrow" />
+                    </button>
+                    <div class="answer">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    
+                </div>
+            </li>
+            <li>
+                <div class="faq">
+
+                    <button class="question">What is the accordion in FAQ?
+                        <img src="./arrow.png" alt="arrow" class="arrow" />
+                    </button>
+                    <div class="answer">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="faq">
+
+                    <button class="question">What is the use of accordion in UI?
+                        <img src="./arrow.png" alt="arrow" class="arrow" />
+                    </button>
+                    <div class="answer">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    
+                </div>
+            </li>
+            <li>
+                <div class="faq">
+                    <button class="question">What is the difference between accordion and drawer?
+                        <img src="./arrow.png" alt="arrow" class="arrow" />
+                    </button>
+                    <div class="answer">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    
+                </div>
+            </li>
+            <li>
+                <div class="faq active">
+                    <button class="question">Do accordions need maintenance?
+                        <img src="./arrow.png" alt="arrow" class="arrow" />
+                    </button>
+                    <div class="answer">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>                    
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+</body>
+</html>
+
+
+<style>
+    * {
+        margin: 0; 
+        padding: 0;         
+    }
+
+    ul {
+        padding: 25px 50px;
+    }
+    ul li {
+        list-style: none;
+        border-bottom: 1px solid #dadce0;
+    }
+    ul li div button{
+        background: none;
+        border: none;
+        height: 48px;
+    }
+
+
+    .faq .question {
+        position: relative;
+        width: 100%;
+        text-align: left;
+        /* background-image: url('./arrow.png');
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position-x: right;
+        background-position-y: center; */
+    }
+    .arrow {
+        width: 15px;
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-50%);
+        transition: all 0.2s ease;
+    }
+
+    .answer {
+        height: 0;
+        overflow: hidden;
+        padding-right: 30px;
+        text-align: justify;   
+        transition: all 0.2s linear;     
+    }
+    
+    .faq.active .answer {
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .faq.active .arrow {
+        transform: rotate(90deg);
+    }
+</style>
+
+<script>
+
+var btnToggle = document.querySelectorAll('.question');
+var faq = document.getElementById('faqWrapper');
+
+faq.addEventListener('mouseenter', function(){
+    console.log("MOUSE ENTERED");
+})
+
+
+
+btnToggle.forEach(function(button){
+    button.addEventListener('click', function(){
+        this.parentNode.classList.toggle('active')
+    })
+    
+})
+
+
+
+</script>

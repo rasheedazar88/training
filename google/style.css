@@ -238,19 +238,46 @@ footer .footer-top ul {
     padding: 8px;
     border: none;    
     box-shadow: 0 4px 8px 3px rgba(0,0,0,.15), 0 1px 3px rgba(0,0,0,.3);
+    overflow: scroll;
+    display: none;
 }
 
+body.menu-open .menu_popup {
+    display: block;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(218, 220, 224);
+    border: 4px solid transparent;
+    border-radius: 8px;
+    box-shadow: none;
+    min-height: 50px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+    border: none;
+    margin-bottom: 34px;
+    margin-top: 34px;
+}
 .popup_wrapper {
-    background-color: #f8fafd;
     position: relative;
     height: 100%;    
-    border-radius: 24px 24px 4px 4px; 
-    padding: 24px 20px;
     width: auto;
 }
 
 .popup_wrapper ul {
+    background-color: #f8fafd;
+    border-radius: 24px 24px 4px 4px;
     text-align: center;
+    padding: 24px 20px;
+    margin-bottom: 4px;
+}
+
+.popup_wrapper ul:nth-child(2) {
+    border-radius: 4px 4px 24px 24px;
+    margin-bottom: 10px;
 }
 
 .popup_wrapper .icon-item-list {
@@ -333,3 +360,73 @@ footer .footer-top ul {
 .popup_wrapper .icons.shopping {
     background-position:0 -174px;
 }
+.popup_wrapper .icons.translate {
+    background-position:0 -1682px;
+}
+.popup_wrapper .icons.books {
+    background-position:0 -522px;
+}
+.popup_wrapper .icons.blogger {
+    background-position:0 -2494px;
+}
+.popup_wrapper .icons.photo {
+    background-position:0 -870px;
+}
+.popup_wrapper .icons.account {
+
+}
+.popup_wrapper .icons.docs {
+    background-position:0 -2088px;
+}
+.popup_wrapper .icons.contact {
+    background-position:0 -1624px;
+}
+.popup_wrapper .icons.finance {
+    background-position:0 -1508px;
+}
+.popup_wrapper .icons.sheets {
+    background-position:0 -2146px;
+}
+.popup_wrapper .icons.slides {
+    background-position:0 0;
+}
+.popup_wrapper .icons.keep {
+    background-position:0 -1102px;
+}
+.popup_wrapper .icons.jamboard {
+    background-position:0 -2030px;
+}
+.popup_wrapper .icons.classroom {
+    background-position:0 -1856px;
+}
+.popup_wrapper .icons.earth {
+    background-position:0 -1566px;
+}
+.popup_wrapper .icons.saved {
+    background-position:0 -1972px;
+}
+.popup_wrapper .icons.arts {
+    background-position:0 -638px;
+}
+.popup_wrapper .icons.ads {
+    background-position:0 -1218px;
+}
+.popup_wrapper .icons.one {
+    background-position:0 -812px;
+}
+.popup_wrapper .icons.travel {
+    background-position:0 -754px;
+}
+.popup_wrapper .icons.forms {
+    background-position:0 -232px;
+}
+.popup_wrapper .icons.store {
+    background-position:0 -2204px;
+}
+.popup_wrapper .icons.chrome {
+    background-position:0 -1914px;
+}
+.popup_wrapper .icons.passwords {
+    background-position:0 -58px;
+}
+

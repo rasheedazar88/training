@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Travel Agent</title>
+
+</head>
+<body>
+    
+<div id="header">
+
+</div>
+    
+<div id="herosection"></div>
+
+<div id="ourpartner"></div>
+
+<div id="slider"></div>
+
+<div id="gallary"></div>
+
+<div id="ourservice"></div>
+</body>
+
+
+</html>
+
+<script>
+  
+
+    document.addEventListener("DOMContentLoaded", function(){
+        fetch('header.html')        
+        .then(response => {
+            if(!response.ok) {
+                throw new Error("Network response was not ok")
+            }
+            return response.text();
+        })
+        .then(data=>{
+            document.getElementById('header').innerHTML = data
+        })
+
+
+        fetch('herosection.html')        
+        .then(response => {
+            if(!response.ok) {
+                throw new Error("Network response was not ok")
+            }
+            return response.text();
+        })
+        .then(data=>{
+            document.getElementById('herosection').innerHTML = data
+        })
+
+        fetch('ourpartner.html')
+        .then(response => {
+            if(!response.ok) {
+                throw new Error("Network response was not ok")
+            }
+            return response.text();
+        })
+        .then(data=>{
+            document.getElementById('ourpartner').innerHTML = data
+        })
+
+        fetch('destinations.html')        
+        .then(response => {
+            if(!response.ok) {
+                throw new Error("Network response was not ok")
+            }
+            return response.text();
+        })
+        .then(data=>{
+            document.getElementById('slider').innerHTML = data
+            
+        })
+
+        fetch('gallary.html')        
+        .then(response => {
+            if(!response.ok) {
+                throw new Error("Network response was not ok")
+            }
+            return response.text();
+        })
+        .then(data=>{
+            document.getElementById('gallary').innerHTML = data
+            
+        })
+
+        fetch('ourservice.html')        
+        .then(response => {
+            if(!response.ok) {
+                throw new Error("Network response was not ok")
+            }
+            return response.text();
+        })
+        .then(data=>{
+            document.getElementById('ourservice').innerHTML = data
+            
+        })
+
+    })
+</script>
